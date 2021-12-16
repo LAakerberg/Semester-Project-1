@@ -7,7 +7,7 @@
     <meta name="description" content="Futue Science museum">
     <meta name="keyword" content="Museum, Future, Space, Human">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-copy.css">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/media.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -19,23 +19,16 @@
 
 <body>
     <header>
-        <div class="header">
-            <img src="images/icon-1719742-small.svg" class="logotype" alt="Logotype for the museum" />
+        <div class="logotype">
+            <img src="images/icon-1719742-small.svg" alt="Logotype for the museum" />
         </div>
-        <div class="header menu">
-            <div class="top-left">
-                <a href="index.html" class="home">Future Science Museum</a>
-            </div>
-            <div class="top-right">
-                <ul>
-                    <li><a href="index.html" class="icons"><span class="material-icons md-36">account_circle</span></a>
-                    </li>
-                    <li><a href="index.html" class="icons"><span class="material-icons md-36">shopping_cart</a></span>
-                    </li>
-                    <li><a href="index.html" class="icons"><span class="material-icons md-36">search</span></a></li>
-                </ul>
-            </div>
-            <div class="bottom-left">
+        <div class="header">
+            <div class="top"><a href="index.html" class="home">Future Science Museum</a></div>
+            <div class="menu">
+                <label for="hamburger-menu"><span class="material-icons">
+                        menu
+                    </span></label>
+                <input type="checkbox" id="hamburger-menu">
                 <nav>
                     <ul>
                         <li><a href="index.html">Home</a></li>
@@ -48,8 +41,17 @@
                 </nav>
             </div>
         </div>
+        <div class="sub">
+            <ul>
+                <li><a href="index.html" class="icons"><span class="material-icons md-36">account_circle</span></a>
+                </li>
+                <li><a href="index.html" class="icons"><span class="material-icons md-36">shopping_cart</a></span>
+                </li>
+                <li><a href="index.html" class="icons"><span class="material-icons md-36">search</span></a>
+                </li>
+            </ul>
+        </div>
     </header>
-
     <main>
         <section class="top-content">
             <div class="background">

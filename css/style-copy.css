@@ -71,81 +71,98 @@ p {
     color: #fff;
 }
 
-header div {
-}
-
-.header {
-    position: relative;
-}
-
 .logotype {
+    display: none;
+    padding: 5px;
+}
+
+.logotype img {
     width: 100px;
     padding: 5px;
 }
 
-.top-left {
-    position: absolute;
-    top: 5px;
-    left: 0px;
-    margin: 0px auto;
-    padding: 0px 0px 0px 20px;
+.header {
+    padding-left: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
 }
 
-.top-left h1 {
-    margin: 0px auto;
-
-}
-
-.top-right {
-    position: absolute;
-    top: 5px;
-    right: 0px;
-}
-
-.top-right li {
-    display: inline-block;
-    padding-right: 20px;
-}
-
-.bottom-left {
-    position: absolute;
-    bottom: 5px;
-    left: 0px;
+.top {
+    flex: 4;
+    margin: auto;
+    padding-top: 5px;
+    text-align: center;
 }
 
 .menu {
     flex: 1;
 }
 
-/* Nav menu Global */
-
-nav {
-    display: block;
-    max-width: 700px;
+.menu span {
+    padding: 20px 10px;
+    margin: auto;
 }
 
-nav ul {
+.sub {
+    padding-top: 5px;
+    min-width: 80px;
+}
+
+.sub ul {
     padding: 0px;
     margin: 0px auto;
     text-transform: uppercase;
 }
 
-nav li {
+.sub li {
     display: inline-block;
+}
+
+.hamburger {
+    display: block;
+}
+
+#hamburger-menu:checked ~ nav {
+    display: block;
+}
+
+/* Nav menu Global */
+
+nav {
+    display: none;
+    min-width: 100%;
+    position: absolute;
+    top: 120px;
+    left: 0px;
+    background-color: #639cffaf;
+
+}
+
+nav ul {
+    padding: 15px 0px 10px 30px;
+    margin: auto;
+   /* width: 170px; */
+    text-transform: uppercase;
+}
+
+nav li {
+    display: block;
 }
 
 nav a {
     text-decoration: none;
-    padding: 5px 10px 5px 10px;
+    padding: 5px 10px 0px 10px;
     color: #fff;
     text-transform: uppercase;
     font-size: 1.4em;
     transition: 0.9s;
+    padding-left: 0px;
 }
 
 nav a:hover {
     text-decoration: underline;
-    padding: 5px 20px 5px 20px;
+    padding: 5px 20px 0px 20px;
     color: rgb(113, 0, 0);
     text-transform: uppercase;
     font-size: 1.4em;
@@ -160,11 +177,21 @@ nav a:hover {
     background-color: #9dbffa;
 }
 
+/* Hamburger menu Global */
+
+#hamburger-menu {
+    display: none;
+}
+
+#hamburger-menu:checked ~ nav {
+    display: block;
+}
+
 /* Google Icons Global */
 
 .material-icons.md-36 { 
     transition: .5s;
-    font-size: 48px;
+    font-size: 24px;
     color: #fff; 
 }
 
@@ -175,14 +202,11 @@ nav a:hover {
     color: rgb(17, 17, 17);
 }
 
-/* Hamburger menu Global */
-
-
-
 /* Main section top-content Global */
 
 .top-content {
     min-height: 100px;
+   /* position: relative; */
 }
 
 .top-content .background {
@@ -192,7 +216,7 @@ nav a:hover {
     background-position: left;
     background-position-y: top;
     min-height: 600px;
-    position: relative;
+   /* position: relative; */
 }
 
 .content-bar {
@@ -200,6 +224,12 @@ nav a:hover {
     margin: 0px auto;
     display: flex;
     justify-content: center;
+}
+
+.topmenu-left {
+    position: absolute;
+    top: 100px;
+    left: 0px;
 }
 
 .bar {
@@ -224,11 +254,11 @@ nav a:hover {
 }
 
 .open-hours {
-    background: rgba(255, 255, 255, 0.7);
+    background: rgba(255, 255, 255, 0.8);
     max-width: 80%;
     position: absolute;
-    top: 10px;
-    right: 10px;
+    top: 350px;
+    right: 30px;
     border-radius: 10px;
 }
 
@@ -238,6 +268,7 @@ nav a:hover {
 }
 
 .open-hours li {
+    font-family: 'Fira Sans', sans-serif;
     display: block;
     font-weight: bold;
 }
@@ -350,6 +381,10 @@ nav a:hover {
     background-image: url("../images/scott-webb-102825-small2.jpg");
 }
 
+.human__img {
+    background-image: url("../images/mavis-cw-164128.jpg");
+}
+
 /* Main section main-content */ 
 
 .main-content {
@@ -396,11 +431,23 @@ nav a:hover {
 
 /* Find us Global (Both index.html & visit.html */
 
+.find-us {
+    display: flex;
+    flex-direction: column-reverse; 
+}
+
+.visit_us {
+    flex: 1;
+    background-color: #DBDBDB;
+    position: relative;
+    min-height: 350px;
+}
+
 .find-us__text { 
-    width: 60%;
+    width: 70%;
     position: absolute;
-    top: 100px;
-    left: 50px;
+    top: 30px;
+    left: 30px;
     padding-left: 20px;
 }
 
@@ -415,10 +462,11 @@ nav a:hover {
     background-repeat: no-repeat;
     background-position: center;
     background-position-y: 74%;
+    min-height: 350px;
 }
 
 
-/* Footer section */
+/* Footer section Global */
 
 .footer_bottom {
     display: flex;

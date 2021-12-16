@@ -28,8 +28,6 @@
     margin: 0px auto;
     width: 100%;
     display: flex;
-    border-style: solid;
-    border-width: 1px;
     transition: .4s;
     opacity: .8;
 }
@@ -103,7 +101,7 @@
 
 .resturants {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 
 .visit__resturants {
@@ -116,10 +114,9 @@
 .resturants-text { 
     width: 60%;
     position: absolute;
-    top: 100px;
-    left: 50px;
+    top: 30px;
+    left: 30px;
     padding-left: 20px;
-
 }
 
 .visit__resturants__img {
@@ -129,18 +126,7 @@
     background-repeat: no-repeat;
     background-position: center;
     background-position-y: 45%;
-}
-
-/* Main section find-us */ 
-
-.find-us {
-    display: flex;
-    flex-direction: row;
-}
-
-.visit_us {
-    flex: 1;
-    background-color: #DBDBDB;
-    position: relative;
     min-height: 350px;
 }
+
+/* Main section find-us (Styles.css) */ 
