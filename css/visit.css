@@ -2,7 +2,7 @@
 
 .find-us {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 
 .visit_us {
@@ -14,11 +14,15 @@
 
 /* Find us */
 
+.search {
+    padding: 10px;
+}
+
 .find-us_search {
     margin: 10px auto;
     padding: 10px;
     background-color: #FF5050;
-    width: 700px;
+    max-width: 500px;
     min-height: 100px;
     border-radius: 10px;
     border: solid 1px;
@@ -57,4 +61,8 @@ button {
     background-position: center;
     background-position-y: 75%;
     min-height: 550px;
+}
+
+.museum {
+    display: none;
 }

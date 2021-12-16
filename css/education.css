@@ -2,10 +2,14 @@
 
 .education-main {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     background-color: #DBDBDB;
     transition: .4s;
     opacity: .8;
+}
+
+.reverse {
+    flex-direction: column-reverse;
 }
 
 .education-main:hover {

@@ -185,13 +185,6 @@ nav a {
     color: #fff; 
 }
 
-.material-icons.md-36:hover { 
-    transition: .5s;
-    background-color: #b0cdff;
-    border-radius: 10px;
-    color: rgb(17, 17, 17);
-}
-
 /* Main section top-content Global */
 
 .top-content {

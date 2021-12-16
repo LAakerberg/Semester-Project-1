@@ -6,7 +6,7 @@
 
 .about-flex {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     background-color: #DBDBDB;
 }
 

@@ -3,7 +3,7 @@
 /* Main section main-content */ 
 
 .grid {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(1, 1fr);
 }
 
 .grid2 {
@@ -11,9 +11,8 @@
 }
 
 .content-flex1 {
-    display: flex;
-    flex-direction: row;
-    max-height: 900px;
+    display: grid;
+    max-height: 100%;
     padding: 10px;
     gap: 10px;
 }
@@ -44,7 +43,7 @@
     background-color: #cacaca;
 }
 
-.content-text {
+.explore-text {
     max-width: 80%;
     width: 220px;
     height: 60px;
