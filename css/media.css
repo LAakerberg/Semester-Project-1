@@ -114,7 +114,7 @@ nav {
         background-color: #b84a4a;
     }
     .links-footer a:hover {
-        background-color: #b84a4a;
+        text-decoration: underline;
     }
     .fab-fa-twitter {
         font-size: 2em;
@@ -158,6 +158,9 @@ nav {
         padding-top: 5px;
         min-width: 135px;
     }
+    .bar {
+        top: 550px;
+    }
 }
 
 @media screen and (min-width: 830px) {
@@ -187,18 +190,14 @@ nav {
     .logotype {
         display: block;
     }
-    .bar {
-        display: flex;
-        flex-direction: row;
-        max-width: 100%;
-        position: absolute;
-        top: 685px;
-        gap: 0px;
-    }
     .open-hours {
         top: 370px;
         right: 20px;
         position: absolute;
+    }
+    .bar {
+        flex-direction: row;
+        top: 685px;
     }
 }
 

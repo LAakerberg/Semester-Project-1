@@ -69,7 +69,7 @@
 /* Main section links-content */
 
 .links-content {
-    background-color: #FF5050;
+    background-color: #bd3535;
 }
 
 .social-links {
@@ -86,7 +86,7 @@
 .social {
     border-left: solid;
     border-right: solid;
-    border-color: #FF6363;
+    border-color: #e87373;
     min-width: 60%;
 }
 

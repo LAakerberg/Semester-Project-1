@@ -29,7 +29,7 @@ main section {
 }
 
 footer {
-    background-color: #FF5050;
+    background-color: #bd3535;
     border-top: solid 1px;
 }
 
@@ -288,14 +288,14 @@ nav a {
 }
 
 .calendar {
-    background-color: #E4AE42;
+    background-color: #b58321;
     width: 220px;
     bottom: 10px;
     transition: 0.4s;
 }
 
 .audioguide {
-    background-color: #FF6363;
+    background-color: #6f2222;
     width: 220px;
     bottom: 10px;
     transition: 0.4s;
