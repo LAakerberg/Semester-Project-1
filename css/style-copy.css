@@ -278,7 +278,7 @@ nav a:hover {
 .cta {
     display: inline-block;
     padding: 10px;
-    width: 220px;
+    /* width: 220px; */
     text-transform: uppercase;
     font-size: 1.5em;
     color: #FFF;
@@ -287,18 +287,21 @@ nav a:hover {
 
 .movies {
     background-color: #1e8816;
+    width: 220px;
     bottom: 10px;
     transition: 0.4s;
 }
 
 .calendar {
     background-color: #E4AE42;
+    width: 220px;
     bottom: 10px;
     transition: 0.4s;
 }
 
 .audioguide {
     background-color: #FF6363;
+    width: 220px;
     bottom: 10px;
     transition: 0.4s;
 }

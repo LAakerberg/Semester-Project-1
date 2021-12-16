@@ -32,6 +32,10 @@
     opacity: .8;
 }
 
+.reverse {
+    flex-direction: column-reverse;
+}
+
 .content-box-main:hover {
     transition: .4s;
     opacity: 1;
