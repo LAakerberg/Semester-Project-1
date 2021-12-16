@@ -106,7 +106,7 @@ p {
 
 .sub {
     padding-top: 5px;
-    min-width: 80px;
+    min-width: 90px;
 }
 
 .sub ul {
@@ -255,10 +255,10 @@ nav a:hover {
 
 .open-hours {
     background: rgba(255, 255, 255, 0.8);
-    max-width: 80%;
+    max-width: 200px;
     position: absolute;
     top: 350px;
-    right: 30px;
+    right: 50px;
     border-radius: 10px;
 }
 
@@ -473,7 +473,7 @@ nav a:hover {
 
 .footer_bottom {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 
 .links {
