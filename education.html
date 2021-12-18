@@ -32,7 +32,7 @@
                         <li><a href="index.html">Home</a></li>
                         <li><a href="news.html">What's on</a></li>
                         <li><a href="explore.html">Explore</a></li>
-                        <li><a href="education.html">Education</a></li>
+                        <li><a href="education.html" class="active">Education</a></li>
                         <li><a href="visit.html">Visit us</a></li>
                         <li><a href="about.html">About us</a></li>
                     </ul>
@@ -41,14 +41,26 @@
         </div>
         <div class="sub">
             <ul>
-                <li><a href="index.html" class="icons"><span class="material-icons md-36">account_circle</span></a>
+                <li><a href="cart.html" class="icons"><span class="material-icons md-36">shopping_cart</a></span>
                 </li>
-                <li><a href="index.html" class="icons"><span class="material-icons md-36">shopping_cart</a></span>
+                <li><a href="visit.html" class="icons"><span class="material-icons md-36">location_on</span>
                 </li>
-                <li><a href="index.html" class="icons"><span class="material-icons md-36">search</span></a>
-                </li>
+                <li><a href="#searchbox"><span class="material-icons md-36">search</span></a></li>
+                <div id="searchbox" class="overlay">
+                    <div class="popup">
+                        <h3>Search</h3>
+                        <a class="close" href="#"><span class="material-icons md-36 close">
+                                close
+                            </span></a>
+                        <div class="search-content">
+                            <form action="" class="wrap">
+                                <input type="text" name="search" placeholder="Search the site...">
+                                <a href="#" class="buttontop">Search</a>
+                            </form>
+                        </div>
+                    </div>
+                </div>
             </ul>
-            <div>Open hours</div>
         </div>
     </header>
 
@@ -59,7 +71,7 @@
             <div class="content-bar">
                 <div class="bar">
                     <div class="menu-bar"><a href="index.html" class="cta movies">Movies</a></div>
-                    <div class="menu-bar"><a href="news.html" class="cta calendar">Calendar</a></div>
+                    <div class="menu-bar"><a href="calendar.html" class="cta calendar">Calendar</a></div>
                     <div class="menu-bar"><a href="index.html" class="cta audioguide">Audioguide</a></div>
                 </div>
             </div>
@@ -80,7 +92,7 @@
             <div class="education-main">
                 <div class="kids conteiner for_kids__img"></div>
                 <div class="kids kids__text">
-                    <h2>For kids</h2>
+                    <h2 id="kids">For kids</h2>
                     <p>Are you a young person looking to learn more about science? Come on down to our museum,
                         there’s plenty to see and do.</p>
                     <p>You can learn about Newtonian physics from our bumper swing, or why not travel back in time
@@ -96,7 +108,7 @@
             </div>
             <div class="education-main reverse">
                 <div class="kids kids__text">
-                    <h2>For teachers</h2>
+                    <h2 id="teachers">For teachers</h2>
                     <p>As a community-driven museum, we want to work with schools to create places of learning and
                         exploring. Our team are on hand to give your students guided tours of the museum, teach them
                         in our
@@ -114,14 +126,14 @@
         <section class="education-content">
             <div class="education__content-img"></div>
             <div class="education__content-text">
-                <h3>Education for school classes</h3>
+                <h3 id="parents">Education for school classes or parents</h3>
                 <p>Are you planning your next school trip? Take contact with us for booking an special guided-tour for
                     your
                     class. We will setup the tour based on your perfers and we can make sure that's your class will get
                     an high classed tour and during the session in the classrom we will have clasifayed personal onsite.
                 </p>
                 <p>Please get in touch with us to find out more about our facilities and to arrange a time to
-                    bring your students through for a visit.
+                    bring your students or group of parents through for a visit.
                 </p>
             </div>
         </section>
@@ -132,18 +144,27 @@
                 <h3>Corporate info</h3>
                 <div>
                     <ul>
-                        <li><a href="index.html">About us</a></li>
-                        <li><a href="index.html">Visit us</a></li>
-                        <li><a href="index.html">Contact us</a></li>
+                        <li><a href="about.html">About us</a></li>
+                        <li><a href="visit.html">Visit us</a></li>
+                        <li><a href="contact.html">Contact us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="links-footer">
+                <h3>Career</h3>
+                <div>
+                    <ul>
+                        <li><a href="index.html">Internships</a></li>
+                        <li><a href="index.html">Volunteer</a></li>
                     </ul>
                 </div>
             </div>
             <div class="links-footer">
                 <h3>Education</h3>
                 <ul>
-                    <li><a href="index.html">For kids</a></li>
-                    <li><a href="index.html">For teachers</a></li>
-                    <li><a href="index.html">Parents</a></li>
+                    <li><a href="#kids">For kids</a></li>
+                    <li><a href="#teachers">For teachers</a></li>
+                    <li><a href="#parents">Parents</a></li>
                 </ul>
             </div>
         </div>

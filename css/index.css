@@ -97,29 +97,12 @@
     flex-direction: column;
 }
 
-.visit__resturants {
-    flex: 1;
-    background-color: #DBDBDB;
-    position: relative;
-    min-height: 350px;
-}
-
-.resturants-text { 
-    width: 60%;
-    position: absolute;
-    top: 30px;
-    left: 30px;
-    padding-left: 20px;
-}
-
 .visit__resturants__img {
-    flex: 1;
-    background-image: url("../images/img/spencer-davis-q3ApAZsS1os-unsplash.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
     background-position-y: 45%;
-    min-height: 350px;
 }
 
 /* Main section find-us (Styles.css) */ 
+
+.find-us__img {
+    background-position-y: 65%;
+}

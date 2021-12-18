@@ -3,6 +3,11 @@
 body {
     min-height: 100vh;
     margin: 0px auto;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+header, main, footer {
     background-color: #FCF2EF;
 }
 
@@ -12,16 +17,14 @@ header {
 }
 
 main {
-    max-width: 1700px;
-    margin: auto;
-
+    min-width: 100%;
+    margin: 0px auto;
 }
 
 main section {
     border-bottom: solid 1px;
     border-left: solid 1px;
     border-right: solid 1px;
-
 }
 
 .top-content {
@@ -117,19 +120,86 @@ p .open {
 }
 
 .sub {
-    padding-top: 5px;
-    min-width: 90px;
+    min-width: 80px;
+    margin: auto;
 }
 
 .sub ul {
     padding: 0px;
     margin: 0px auto;
-    text-transform: uppercase;
 }
 
 .sub li {
     display: inline-block;
 }
+
+/* Search box */
+
+.wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+  .wrap input[type=text] {
+    padding: 11px;
+    border: 1px solid black;
+    width: 70%;
+  }
+
+  .search-content .buttontop {
+      padding: 4px 12px 9px 12px;
+      border: 1px solid black;
+      background-color: rgb(230, 230, 230);
+      color: black;
+      width: 20%;
+      text-align: center;
+  }
+
+  .buttontop:hover {
+    background-color: rgb(202, 202, 202);
+  }
+
+  .overlay {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    display: none;
+    opacity: 0;
+  }
+  .overlay:target {
+    display: block;
+    opacity: 1;
+  }
+  
+  .popup {
+    margin: 70px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    width: 80%;
+    position: relative;
+  }
+
+  .close {
+    background-color: #b0cdff;
+    border-radius: 10px;
+}
+
+  .popup .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    transition: all 200ms;
+  }
+  .popup .search-content {
+    max-height: 30%;
+    overflow: auto;
+  }
 
 .hamburger {
     display: block;
@@ -174,7 +244,7 @@ nav a {
 
 .active {
     text-decoration: underline;
-    padding: 5px 20px 5px 20px;
+    padding: 5px 20px 0px 20px;
     color: rgb(113, 0, 0);
     background-color: #9dbffa;
 }
@@ -194,6 +264,11 @@ nav a {
     transition: .5s;
     font-size: 24px;
     color: #fff; 
+}
+
+.material-icons.cart{
+    color: #000;
+    font-size: 52px;
 }
 
 /* Main section top-content Global */
@@ -241,33 +316,6 @@ nav a {
     padding: 0px 10px;
 }
 
-.open-hours-text {
-    font-style: italic;
-    font-size: 2em;
-    padding: 5px;
-    margin: 0px auto;
-}
-
-.open-hours {
-    background: rgba(255, 255, 255, 0.8);
-    max-width: 200px;
-    position: absolute;
-    top: 340px;
-    right: 30px;
-    border-radius: 10px;
-}
-
-.open-hours ul {
-    margin: 5px auto;
-    padding: 5px;
-}
-
-.open-hours li {
-    font-family: 'Fira Sans', sans-serif;
-    display: block;
-    font-weight: bold;
-}
-
 /* CTA Button + links Global */
 
 .cta {
@@ -303,7 +351,6 @@ nav a {
 
 .readmore {
     display: block;
-    max-width: 135px;
     font-size: 1em;
     color: #000;
     transition: 0.4s;
@@ -321,8 +368,7 @@ nav a {
 /* Main section welcome-content Global */ 
 
 .welcome-content {
-    margin: 0px auto;
-
+    max-width: 100%;
 }
 
 .welcome-text {
@@ -338,21 +384,21 @@ nav a {
 
 /* picture Global */ 
 
+.main-bkg__img {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: 45%;
+    min-height: 350px;
+}
+
 .bkg__img {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     background-position-y: 45%;
-    min-height: 300px;
-    transition: .4s;
-    opacity: .8;
+    min-height: 350px;
 }
-/*
-.bkg__img:hover {
-    transition: .4s;
-    opacity: 1;
-}
-*/
 
 .space__img {
     background-image: url("../images/andrew-ruiz-348421.jpg");
@@ -364,6 +410,8 @@ nav a {
 
 .robotics__img {
     background-image: url("../images/samuel-zeller-158996-small.jpg");
+    background-position-y: 95%;
+    background-position-x: 90%;
 }
 
 .about__img {
@@ -376,6 +424,16 @@ nav a {
 
 .human__img {
     background-image: url("../images/mavis-cw-164128.jpg");
+}
+
+.find-us__img {
+    flex: 1;
+    background-image: url("../images/img/tamas-tuzes-katai-rEn-AdBr3Ig-unsplash1500px.jpg");
+}
+
+.visit__resturants__img {
+    flex: 1;
+    background-image: url("../images/img/spencer-davis-q3ApAZsS1os-unsplash.jpg");
 }
 
 /* Main section main-content */ 
@@ -422,42 +480,30 @@ nav a {
     text-align: left;
 }
 
-/* Find us Global (Both index.html & visit.html */
+/* Find-us Global (Both index.html & visit.html */
 
 .find-us {
     display: flex;
     flex-direction: column-reverse; 
 }
 
-.visit_us {
+/* Resturants and find us */
+
+.visit_us, .visit__resturants {
     flex: 1;
     background-color: #DBDBDB;
-    position: relative;
     min-height: 350px;
+    max-height: 100%;
 }
 
-.find-us__text { 
+.find-us__text, .resturants-text { 
     width: 70%;
-    position: absolute;
-    top: 30px;
-    left: 30px;
-    padding-left: 20px;
+    margin: 10% auto;
 }
 
 .find-us__text span { 
     color: crimson;
 }
-
-.find-us__img {
-    flex: 1;
-    background-image: url("../images/img/tamas-tuzes-katai-rEn-AdBr3Ig-unsplash.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-position-y: 74%;
-    min-height: 350px;
-}
-
 
 /* Footer section Global */
 

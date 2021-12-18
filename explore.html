@@ -31,7 +31,7 @@
                     <ul>
                         <li><a href="index.html">Home</a></li>
                         <li><a href="news.html">What's on</a></li>
-                        <li><a href="explore.html">Explore</a></li>
+                        <li><a href="explore.html" class="active">Explore</a></li>
                         <li><a href="education.html">Education</a></li>
                         <li><a href="visit.html">Visit us</a></li>
                         <li><a href="about.html">About us</a></li>
@@ -41,17 +41,28 @@
         </div>
         <div class="sub">
             <ul>
-                <li><a href="index.html" class="icons"><span class="material-icons md-36">account_circle</span></a>
+                <li><a href="cart.html" class="icons"><span class="material-icons md-36">shopping_cart</a></span>
                 </li>
-                <li><a href="index.html" class="icons"><span class="material-icons md-36">shopping_cart</a></span>
+                <li><a href="visit.html" class="icons"><span class="material-icons md-36">location_on</span>
                 </li>
-                <li><a href="index.html" class="icons"><span class="material-icons md-36">search</span></a>
-                </li>
+                <li><a href="#searchbox"><span class="material-icons md-36">search</span></a></li>
+                <div id="searchbox" class="overlay">
+                    <div class="popup">
+                        <h3>Search</h3>
+                        <a class="close" href="#"><span class="material-icons md-36 close">
+                                close
+                            </span></a>
+                        <div class="search-content">
+                            <form action="" class="wrap">
+                                <input type="text" name="search" placeholder="Search the site...">
+                                <a href="#" class="buttontop">Search</a>
+                            </form>
+                        </div>
+                    </div>
+                </div>
             </ul>
-            <div>Open hours</div>
         </div>
     </header>
-
     <main>
         <section class="top-content">
             <div class="background">
@@ -59,7 +70,7 @@
             <div class="content-bar">
                 <div class="bar">
                     <div class="menu-bar"><a href="index.html" class="cta movies">Movies</a></div>
-                    <div class="menu-bar"><a href="news.html" class="cta calendar">Calendar</a></div>
+                    <div class="menu-bar"><a href="calendar.html" class="cta calendar">Calendar</a></div>
                     <div class="menu-bar"><a href="index.html" class="cta audioguide">Audioguide</a></div>
                 </div>
             </div>
@@ -81,50 +92,195 @@
         <section class="main-content">
             <div class="content-flex1 grid">
                 <div class="content-box">
-                    <div class="explore-text"><a href="explore-science.html" class="explore">Science park</a></div>
+                    <div class="explore-text"><a href="#science" class="explore">Science park</a></div>
                 </div>
                 <div class="content-box">
-                    <div class="explore-text"><a href="explore-wildlife.html" class="explore">Wildlife</a></div>
+                    <div class="explore-text"><a href="#wildlife" class="explore">Wildlife</a></div>
                 </div>
                 <div class="content-box">
-                    <div class="explore-text"><a href="explore-human.html" class="explore">Human</a></div>
+                    <div class="explore-text"><a href="#human" class="explore">Human</a></div>
                 </div>
                 <div class="content-box">
-                    <div class="explore-text"><a href="explore-library.html" class="explore">Library</a></div>
+                    <div class="explore-text"><a href="#library" class="explore">Library</a></div>
                 </div>
                 <div class="content-box">
-                    <div class="explore-text"><a href="explore-space.html" class="explore">Space</a></div>
+                    <div class="explore-text"><a href="#space" class="explore">Space</a></div>
                 </div>
                 <div class="content-box">
-                    <div class="explore-text"><a href="explore-technical.html" class="explore">Technical</a></div>
+                    <div class="explore-text"><a href="#technical" class="explore">Technical</a></div>
                 </div>
             </div>
         </section>
+        <section class="explore-content">
+            <div>
+                <h2 id="science">Welcome to our Science park</h2>
+                <p>Here you will find our newest science, let our personal take you out to the outter space.
+                    Both kids and parents will get an special feeling when you is entering the X-Model space-ship.
+                    With the newest technology on-board the ship from one of the biggest in the industry.
+                </p>
+                <p>Explore the wonders of our cosmos. Our fantastic
+                    exhibition, ‘The Sky Above
+                    Us’, explores the
+                    night sky and what we can see and know about the universe around us. We’ll locate the
+                    various constellations and galaxies that can be seen and learn a bit about the early
+                    navigators who used the stars to travel by.</p>
+            </div>
+            <div class="content-flex1 grid2">
+                <div class="content-box"><img src="/images/andrew-ruiz-348421.jpg" /> </div>
+                <div class="content-box"><img src="/images/scientific-2040795_1280.jpg" /></div>
+                <div class="content-box"><img src="/images/exhibition-1863344_1920.jpg" /></div>
+            </div>
+            <a href="#top" class="readmore"><span class="material-icons">
+                    arrow_upward
+                </span>Back to the start</a>
+        </section>
+        <section class="explore-content">
+            <div>
+                <h2 id="wildlife">Our wildlife area</h2>
+                <p>Here you will find our newest science, let our personal take you out to the outter space.
+                    Both kids and parents will get an special feeling when you is entering the X-Model space-ship.
+                    With the newest technology on-board the ship from one of the biggest in the industry.
+                </p>
+                <p>Explore the wonders of our cosmos. Our fantastic
+                    exhibition, ‘The Sky Above
+                    Us’, explores the
+                    night sky and what we can see and know about the universe around us. We’ll locate the
+                    various constellations and galaxies that can be seen and learn a bit about the early
+                    navigators who used the stars to travel by.</p>
+            </div>
+            <div class="content-flex1 grid2">
+                <div class="content-box"><img src="/images/andrew-ruiz-348421.jpg" /> </div>
+                <div class="content-box"><img src="/images/scientific-2040795_1280.jpg" /></div>
+                <div class="content-box"><img src="/images/exhibition-1863344_1920.jpg" /></div>
+            </div>
+            <a href="#top" class="readmore"><span class="material-icons">
+                    arrow_upward
+                </span>Back to the start</a>
+        </section>
+        <section class="explore-content">
+            <div>
+                <h2 id="human">The human body</h2>
+                <p>Here you will find our newest science, let our personal take you out to the outter space.
+                    Both kids and parents will get an special feeling when you is entering the X-Model space-ship.
+                    With the newest technology on-board the ship from one of the biggest in the industry.
+                </p>
+                <p>Explore the wonders of our cosmos. Our fantastic
+                    exhibition, ‘The Sky Above
+                    Us’, explores the
+                    night sky and what we can see and know about the universe around us. We’ll locate the
+                    various constellations and galaxies that can be seen and learn a bit about the early
+                    navigators who used the stars to travel by.</p>
+            </div>
+            <div class="content-flex1 grid2">
+                <div class="content-box"><img src="/images/andrew-ruiz-348421.jpg" /> </div>
+                <div class="content-box"><img src="/images/scientific-2040795_1280.jpg" /></div>
+                <div class="content-box"><img src="/images/exhibition-1863344_1920.jpg" /></div>
+            </div>
+            <a href="#top" class="readmore"><span class="material-icons">
+                    arrow_upward
+                </span>Back to the start</a>
+        </section>
+        <section class="explore-content">
+            <div>
+                <h2 id="library">Visit our library</h2>
+                <p>Here you will find our newest science, let our personal take you out to the outter space.
+                    Both kids and parents will get an special feeling when you is entering the X-Model space-ship.
+                    With the newest technology on-board the ship from one of the biggest in the industry.
+                </p>
+                <p>Explore the wonders of our cosmos. Our fantastic
+                    exhibition, ‘The Sky Above
+                    Us’, explores the
+                    night sky and what we can see and know about the universe around us. We’ll locate the
+                    various constellations and galaxies that can be seen and learn a bit about the early
+                    navigators who used the stars to travel by.</p>
+            </div>
+            <div class="content-flex1 grid2">
+                <div class="content-box"><img src="/images/andrew-ruiz-348421.jpg" /> </div>
+                <div class="content-box"><img src="/images/scientific-2040795_1280.jpg" /></div>
+                <div class="content-box"><img src="/images/exhibition-1863344_1920.jpg" /></div>
+            </div>
+            <a href="#top" class="readmore"><span class="material-icons">
+                    arrow_upward
+                </span>Back to the start</a>
+        </section>
+        <section class="explore-content">
+            <div>
+                <h2 id="space">Joina our austronats to the space</h2>
+                <p>Here you will find our newest science, let our personal take you out to the outter space.
+                    Both kids and parents will get an special feeling when you is entering the X-Model space-ship.
+                    With the newest technology on-board the ship from one of the biggest in the industry.
+                </p>
+                <p>Explore the wonders of our cosmos. Our fantastic
+                    exhibition, ‘The Sky Above
+                    Us’, explores the
+                    night sky and what we can see and know about the universe around us. We’ll locate the
+                    various constellations and galaxies that can be seen and learn a bit about the early
+                    navigators who used the stars to travel by.</p>
+            </div>
+            <div class="content-flex1 grid2">
+                <div class="content-box"><img src="/images/andrew-ruiz-348421.jpg" /> </div>
+                <div class="content-box"><img src="/images/scientific-2040795_1280.jpg" /></div>
+                <div class="content-box"><img src="/images/exhibition-1863344_1920.jpg" /></div>
+            </div>
+            <a href="#top" class="readmore"><span class="material-icons">
+                    arrow_upward
+                </span>Back to the start</a>
+        </section>
+        <section class="explore-content">
+            <div>
+                <h2 id="technical">Come to our technical area</h2>
+                <p>Here you will find our newest science, let our personal take you out to the outter space.
+                    Both kids and parents will get an special feeling when you is entering the X-Model space-ship.
+                    With the newest technology on-board the ship from one of the biggest in the industry.
+                </p>
+                <p>Explore the wonders of our cosmos. Our fantastic
+                    exhibition, ‘The Sky Above
+                    Us’, explores the
+                    night sky and what we can see and know about the universe around us. We’ll locate the
+                    various constellations and galaxies that can be seen and learn a bit about the early
+                    navigators who used the stars to travel by.</p>
+            </div>
+            <div class="content-flex1 grid2">
+                <div class="content-box"><img src="/images/andrew-ruiz-348421.jpg" /> </div>
+                <div class="content-box"><img src="/images/scientific-2040795_1280.jpg" /></div>
+                <div class="content-box"><img src="/images/exhibition-1863344_1920.jpg" /></div>
+            </div>
+            <a href="#top" class="readmore"><span class="material-icons">
+                    arrow_upward
+                </span>Back to the start</a>
+        </section>
     </main>
-
     <footer>
         <div class="footer_bottom">
             <div class="links-footer">
                 <h3>Corporate info</h3>
                 <div>
                     <ul>
-                        <li><a href="index.html">About us</a></li>
-                        <li><a href="index.html">Visit us</a></li>
-                        <li><a href="index.html">Contact us</a></li>
+                        <li><a href="about.html">About us</a></li>
+                        <li><a href="visit.html">Visit us</a></li>
+                        <li><a href="contact.html">Contact us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="links-footer">
+                <h3>Career</h3>
+                <div>
+                    <ul>
+                        <li><a href="index.html">Internships</a></li>
+                        <li><a href="index.html">Volunteer</a></li>
                     </ul>
                 </div>
             </div>
             <div class="links-footer">
                 <h3>Education</h3>
                 <ul>
-                    <li><a href="index.html">For kids</a></li>
-                    <li><a href="index.html">For teachers</a></li>
-                    <li><a href="index.html">Parents</a></li>
+                    <li><a href="education.html#kids">For kids</a></li>
+                    <li><a href="education.html#teachers">For teachers</a></li>
+                    <li><a href="education.html#parents">Parents</a></li>
                 </ul>
             </div>
         </div>
     </footer>
-
 </body>
 
 </html>

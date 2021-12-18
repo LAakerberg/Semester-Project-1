@@ -33,7 +33,7 @@
                         <li><a href="news.html">What's on</a></li>
                         <li><a href="explore.html">Explore</a></li>
                         <li><a href="education.html">Education</a></li>
-                        <li><a href="visit.html">Visit us</a></li>
+                        <li><a href="visit.html" class="active">Visit us</a></li>
                         <li><a href="about.html">About us</a></li>
                     </ul>
                 </nav>
@@ -41,14 +41,26 @@
         </div>
         <div class="sub">
             <ul>
-                <li><a href="index.html" class="icons"><span class="material-icons md-36">account_circle</span></a>
+                <li><a href="cart.html" class="icons"><span class="material-icons md-36">shopping_cart</a></span>
                 </li>
-                <li><a href="index.html" class="icons"><span class="material-icons md-36">shopping_cart</a></span>
+                <li><a href="visit.html" class="icons"><span class="material-icons md-36">location_on</span>
                 </li>
-                <li><a href="index.html" class="icons"><span class="material-icons md-36">search</span></a>
-                </li>
+                <li><a href="#searchbox"><span class="material-icons md-36">search</span></a></li>
+                <div id="searchbox" class="overlay">
+                    <div class="popup">
+                        <h3>Search</h3>
+                        <a class="close" href="#"><span class="material-icons md-36 close">
+                                close
+                            </span></a>
+                        <div class="search-content">
+                            <form action="" class="wrap">
+                                <input type="text" name="search" placeholder="Search the site...">
+                                <a href="#" class="buttontop">Search</a>
+                            </form>
+                        </div>
+                    </div>
+                </div>
             </ul>
-            <div>Open hours</div>
         </div>
     </header>
 
@@ -59,7 +71,7 @@
             <div class="content-bar">
                 <div class="bar">
                     <div class="menu-bar"><a href="index.html" class="cta movies">Movies</a></div>
-                    <div class="menu-bar"><a href="news.html" class="cta calendar">Calendar</a></div>
+                    <div class="menu-bar"><a href="calendar.html" class="cta calendar">Calendar</a></div>
                     <div class="menu-bar"><a href="index.html" class="cta audioguide">Audioguide</a></div>
                 </div>
             </div>
@@ -72,12 +84,11 @@
                 <div>
                     <p>Come join us at the Future Science Museum where we’re committed to making science accessible
                         to all.</p>
-                    <p>Monday: Closed</p>
                 </div>
         </section>
         <section class="find-us_content">
             <div class="find-us">
-                <div class="find-us__img">
+                <div class="bkg__img find-us__img">
 
                 </div>
                 <div class="visit_us">
@@ -86,8 +97,17 @@
                         <p>We are located in South Brisbane, Queensland, Australien</p>
                         <p><span>62 Cordelia St, South Brisbane
                                 QLD 4101, Australien</span></p>
-                        <a href="index.html" class="readmore">Google Maps</a>
-                        <a href="index.html" class="readmore">Read more >></a>
+                        <a href="https://www.google.com/maps/place/62+Cordelia+St,+South+Brisbane+QLD+4101,+Australien/@-27.4814246,153.0195859,19z/data=!4m5!3m4!1s0x6b915a0b84de8187:0x647908ce15ccd7c3!8m2!3d-27.4811965!4d153.0197708"
+                            class="readmore" target="_blank">Google Maps >></a>
+                        <ul>
+                            <h2>Open hours</h2>
+                            <li>Monday: Closed</li>
+                            <li>Tuesday: 10:00 - 16:00</li>
+                            <li>Wednesday: 10:00 - 16:00</li>
+                            <li>Friday: 10:00 - 19:00</li>
+                            <li>Saturday: 09:00 - 16:00</li>
+                            <li>Sunday: 09:00 - 13:00</li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -110,16 +130,15 @@
             </div>
         </section>
     </main>
-
     <footer>
         <div class="footer_bottom">
             <div class="links-footer">
                 <h3>Corporate info</h3>
                 <div>
                     <ul>
-                        <li><a href="index.html">About us</a></li>
-                        <li><a href="index.html">Visit us</a></li>
-                        <li><a href="index.html">Contact us</a></li>
+                        <li><a href="about.html">About us</a></li>
+                        <li><a href="visit.html">Visit us</a></li>
+                        <li><a href="contact.html">Contact us</a></li>
                     </ul>
                 </div>
             </div>
@@ -135,14 +154,13 @@
             <div class="links-footer">
                 <h3>Education</h3>
                 <ul>
-                    <li><a href="index.html">For kids</a></li>
-                    <li><a href="index.html">For teachers</a></li>
-                    <li><a href="index.html">Parents</a></li>
+                    <li><a href="education.html#kids">For kids</a></li>
+                    <li><a href="education.html#teachers">For teachers</a></li>
+                    <li><a href="education.html#parents">Parents</a></li>
                 </ul>
             </div>
         </div>
     </footer>
-
 </body>
 
 </html>

@@ -7,7 +7,7 @@
     <meta name="description" content="Futue Science museum">
     <meta name="keyword" content="Museum, Future, Space, Human">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-copy.css">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/media.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -33,7 +33,7 @@
                 <input type="checkbox" id="hamburger-menu">
                 <nav>
                     <ul>
-                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html" class="active">Home</a></li>
                         <li><a href="news.html">What's on</a></li>
                         <li><a href="explore.html">Explore</a></li>
                         <li><a href="education.html">Education</a></li>
@@ -45,18 +45,26 @@
         </div>
         <div class="sub">
             <ul>
-                <li><a href="index.html" class="icons"><span class="material-icons md-36">account_circle</span></a>
+                <li><a href="cart.html" class="icons"><span class="material-icons md-36">shopping_cart</a></span>
                 </li>
-                <li><a href="index.html" class="icons"><span class="material-icons md-36">shopping_cart</a></span>
+                <li><a href="visit.html" class="icons"><span class="material-icons md-36">location_on</span>
                 </li>
-                <li><a href="index.html" class="icons"><span class="material-icons md-36">search</span></a>
-                </li>
+                <li><a href="#searchbox"><span class="material-icons md-36">search</span></a></li>
+                <div id="searchbox" class="overlay">
+                    <div class="popup">
+                        <h3>Search</h3>
+                        <a class="close" href="#"><span class="material-icons md-36 close">
+                                close
+                            </span></a>
+                        <div class="search-content">
+                            <form action="" class="wrap">
+                                <input type="text" name="search" placeholder="Search the site...">
+                                <a href="#" class="buttontop">Search</a>
+                            </form>
+                        </div>
+                    </div>
+                </div>
             </ul>
-            <div>
-                <p class="open">Open hours<span class="material-icons">
-                        keyboard_arrow_down
-                    </span></p>
-            </div>
         </div>
     </header>
     <main>
@@ -66,7 +74,7 @@
             <div class="content-bar">
                 <div class="bar">
                     <div class="menu-bar"><a href="index.html" class="cta movies">Movies</a></div>
-                    <div class="menu-bar"><a href="news.html" class="cta calendar">Calendar</a></div>
+                    <div class="menu-bar"><a href="calendar.html" class="cta calendar">Calendar</a></div>
                     <div class="menu-bar"><a href="index.html" class="cta audioguide">Audioguide</a></div>
                 </div>
             </div>
@@ -88,7 +96,7 @@
         <section class="main-content">
             <div class="content-grid">
                 <div class="content-box-main">
-                    <div class="contiener-bkg bkg__img space__img"></div>
+                    <div class="contiener-bkg main-bkg__img space__img"></div>
                     <div class="contiener-text content-text-main">
                         <p>Explore the wonders of our cosmos. Our fantastic
                             exhibition, ‘The Sky Above
@@ -98,7 +106,7 @@
                     </div>
                 </div>
                 <div class="content-box-main">
-                    <div class="contiener-bkg bkg__img dinousare__img"></div>
+                    <div class="contiener-bkg main-bkg__img dinousare__img"></div>
                     <div class="contiener-text content-text-main">
                         <p>Discover the origins of life on this planet and how the species we know today have evolved
                             our time. You can also take some time to meet a few of the creatures who didn’t survive,
@@ -113,7 +121,7 @@
                             future is here. You can even say hello and shake the hand of Rob the Robot.</p>
                         <a href="index.html" class="readmore">Read more >></a>
                     </div>
-                    <div class="contiener-bkg bkg__img robotics__img"></div>
+                    <div class="contiener-bkg main-bkg__img robotics__img"></div>
                 </div>
                 <div class="content-box-main reverse">
                     <div class="contiener-text content-text-main">
@@ -122,7 +130,7 @@
                             but for the whole planet.</p>
                         <a href="index.html" class="readmore">Read more >></a>
                     </div>
-                    <div class="contiener-bkg bkg__img human__img"></div>
+                    <div class="contiener-bkg main-bkg__img human__img"></div>
                 </div>
             </div>
         </section>
@@ -156,14 +164,14 @@
                         <a href="index.html" class="readmore">Read more >></a>
                     </div>
                 </div>
-                <div class="visit__resturants__img">
+                <div class="bkg__img visit__resturants__img">
 
                 </div>
             </div>
         </section>
         <section class="find-us_content">
             <div class="find-us">
-                <div class="find-us__img">
+                <div class="bkg__img find-us__img">
 
                 </div>
                 <div class="visit_us">
@@ -180,30 +188,37 @@
             </div>
         </section>
     </main>
-
     <footer>
         <div class="footer_bottom">
             <div class="links-footer">
                 <h3>Corporate info</h3>
                 <div>
                     <ul>
-                        <li><a href="index.html">About us</a></li>
-                        <li><a href="index.html">Visit us</a></li>
-                        <li><a href="index.html">Contact us</a></li>
+                        <li><a href="about.html">About us</a></li>
+                        <li><a href="visit.html">Visit us</a></li>
+                        <li><a href="contact.html">Contact us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="links-footer">
+                <h3>Career</h3>
+                <div>
+                    <ul>
+                        <li><a href="index.html">Internships</a></li>
+                        <li><a href="index.html">Volunteer</a></li>
                     </ul>
                 </div>
             </div>
             <div class="links-footer">
                 <h3>Education</h3>
                 <ul>
-                    <li><a href="index.html">For kids</a></li>
-                    <li><a href="index.html">For teachers</a></li>
-                    <li><a href="index.html">Parents</a></li>
+                    <li><a href="education.html#kids">For kids</a></li>
+                    <li><a href="education.html#teachers">For teachers</a></li>
+                    <li><a href="education.html#parents">Parents</a></li>
                 </ul>
             </div>
         </div>
     </footer>
-
 </body>
 
 </html>

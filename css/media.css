@@ -24,6 +24,9 @@ nav {
     .grid {
         grid-template-columns: repeat(2, 1fr);
     }
+    .grid2 {
+        grid-template-columns: repeat(2, 1fr);
+    }
     .content-box-main {
         display: flex;
         flex-wrap: wrap-reverse;
@@ -86,44 +89,9 @@ nav {
     }
 }
 
-/* Adding transition & animation for bigger screens */
-
 @media screen and (min-width: 760px) {
-    .content-box-main {
-        transition: .4s;
-        opacity: .8;
-    }
-    .content-box-main:hover {
-        transition: .4s;
-        opacity: 1;
-    }
-    nav a:hover {
-        text-decoration: underline;
-        padding: 5px 20px 0px 20px;
-        color: rgb(113, 0, 0);
-        text-transform: uppercase;
-        font-size: 1.4em;
-        background-color: #9dbffa;
-        transition: 0.9s;
-    }
-    .movies:hover, .calendar:hover, .audioguide:hover {
-        padding: 15px;
-        transition: 0.4s;    
-    }
-    .links a:hover {
-        background-color: #b84a4a;
-    }
-    .links-footer a:hover {
-        text-decoration: underline;
-    }
     .fab-fa-twitter {
         font-size: 2em;
-    }
-    .material-icons.md-36:hover { 
-        transition: .5s;
-        background-color: #b0cdff;
-        border-radius: 10px;
-        color: rgb(17, 17, 17);
     }
     .news-text {
         flex-direction: row;
@@ -131,21 +99,31 @@ nav {
     .content-flex1, .content-flex2 {
         flex-direction: row;
     }
+    .popup {
+        width: 50%;
+      }
+      .wrap {
+        display: flex;
+        flex-direction: row;
+        gap: 0px;
+    }
+    .wrap input[type=text] {
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        width: 40%;
+      }
+      .search-content .buttontop {
+        max-width: 100px;
+    }
 }
 
 @media screen and (min-width: 800px) {
+    .grid2 {
+        grid-template-columns: repeat(3, 1fr);
+    }
     .content-grid{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-    }
-    .second__content-text {
-        width: 30%;
-        top: 120px;
-        left: 50px;
-    }
-    .resturants-text, .find-us__text  { 
-        top: 80px;
-        left: 50px;
     }
      /* Google Icons Global */
 
@@ -155,7 +133,6 @@ nav {
     color: #fff; 
     }
     .sub {
-        padding-top: 5px;
         min-width: 135px;
     }
     .bar {
@@ -210,5 +187,69 @@ nav {
     }
     .news-text {
         grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Adding transition & animation for bigger screens */
+
+@media screen and (min-width: 992px) {
+    .content-box-main {
+        transition: .4s;
+        opacity: .8;
+    }
+    .content-box-main:hover {
+        transition: .4s;
+        opacity: 1;
+    }
+    nav a:hover {
+        text-decoration: underline;
+        padding: 5px 20px 0px 20px;
+        color: rgb(113, 0, 0);
+        text-transform: uppercase;
+        font-size: 1.4em;
+        background-color: #9dbffa;
+        transition: 0.9s;
+    }
+    .movies:hover, .calendar:hover, .audioguide:hover {
+        padding: 15px;
+        transition: 0.4s;    
+    }
+    .links a:hover {
+        background-color: #b84a4a;
+    }
+    .links-footer a:hover {
+        text-decoration: underline;
+    }
+    .material-icons.md-36:hover { 
+        transition: .5s;
+        background-color: #b0cdff;
+        border-radius: 10px;
+        color: rgb(17, 17, 17);
+    }
+    .bkg__img {
+        transition: .4s;
+        opacity: .8;
+    }
+    .bkg__img:hover {
+        transition: .4s;
+        opacity: 1;
+    }
+    .education-main {
+        transition: .4s;
+        opacity: .8;
+    }
+    .education-main:hover {
+        transition: .4s;
+        opacity: 1;
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    .find-us__img {
+        min-height: 450px;
+    }
+    .robotics__img {
+        background-position: center;
+        background-position-y: 15%;
     }
 }
