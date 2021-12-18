@@ -280,7 +280,7 @@ nav a {
 }
 
 .top-content .background {
-    background-image: url("../images/learn-2405206_1920.jpg");
+    background-image: url("../images/learn-2405206_1920resize.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: left;
@@ -401,11 +401,11 @@ nav a {
 }
 
 .space__img {
-    background-image: url("../images/andrew-ruiz-348421.jpg");
+    background-image: url("../images/andrew-ruiz-348421-resize1920.jpg");
 }
 
 .dinousare__img {
-    background-image: url("../images/mammoth-1257288_1920.jpg");
+    background-image: url("../images/mammoth-1257288_1920resize.jpg");
 }
 
 .robotics__img {
@@ -419,11 +419,11 @@ nav a {
 }
 
 .museum__img {
-    background-image: url("../images/scott-webb-102825-small2.jpg");
+    background-image: url("../images/scott-webb-102825-small.jpg");
 }
 
 .human__img {
-    background-image: url("../images/mavis-cw-164128.jpg");
+    background-image: url("../images/mavis-cw-164128resize2000.jpg");
 }
 
 .find-us__img {

@@ -6,6 +6,12 @@
     background-color: #DBDBDB;
 }
 
+.career-main {
+    display: flex;
+    flex-direction: column;
+    background-color: #DBDBDB;
+}
+
 .reverse {
     flex-direction: column-reverse;
 }
@@ -64,6 +70,17 @@
     background-position: center;
     background-position-y: 45%;
     min-height: 450px;
+    transition: .4s;
+    opacity: .8;
+}
+
+.career__img {
+    background-image: url("../images/resize/clark-tibbs-oqStl2L5oxI-unsplash.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: 45%;
+    min-height: 550px;
     transition: .4s;
     opacity: .8;
 }

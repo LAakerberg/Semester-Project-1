@@ -70,3 +70,9 @@ button {
 .museum {
     display: none;
 }
+
+.museum__img {
+    background-image: url("../images/scott-webb-102825-small.jpg");
+    background-position-y: 75%;
+    min-height: 750px;
+}
