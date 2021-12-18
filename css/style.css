@@ -452,6 +452,11 @@ nav a {
     flex: 1.2;
 }
 
+iframe {
+    width: 100%;
+    height: 100%;
+}
+
 .contiener-text {
     flex: 1;
 }
