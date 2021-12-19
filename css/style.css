@@ -59,6 +59,10 @@ h3 {
     font-size: 1.2em;
 }
 
+.hidden {
+    visibility: hidden;
+}
+
 p {
     font-size: 1em;
     color: #000;
