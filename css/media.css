@@ -251,6 +251,9 @@ nav {
         flex-direction: row;
         top: 685px;
     }
+    .explore-content h2, p {
+        margin: 10px;
+    }
 }
 
 @media screen and (min-width: 1300px) {

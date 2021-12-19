@@ -383,7 +383,12 @@ nav a {
 
 .welcome-text p {
     padding-bottom: 10px;
-    margin-bottom: 0px;
+    max-width: 80%;
+    margin: 0px auto;
+}
+
+p.short {
+    max-width: 80%;
 }
 
 /* picture Global */ 
@@ -432,16 +437,16 @@ nav a {
 
 .find-us__img {
     flex: 1;
-    background-image: url("../images/img/tamas-tuzes-katai-rEn-AdBr3Ig-unsplash1500px.jpg");
+    background-image: url("../images/tamas-tuzes-katai-rEn-AdBr3Ig-unsplash1500px.jpg");
 }
 
 .visit__resturants__img {
     flex: 1;
-    background-image: url("../images/img/spencer-davis-q3ApAZsS1os-unsplash.jpg");
+    background-image: url("../images/spencer-davis-q3ApAZsS1os-unsplash-small.jpg");
 }
 
 .education__content-img {
-    background-image: url("../images/img/mario-heller-hXLkFpvKRys-unsplash-small.jpg");
+    background-image: url("../images/mario-heller-hXLkFpvKRys-unsplash-small.jpg");
     min-height: 450px;
 }
 
