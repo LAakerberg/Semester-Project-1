@@ -373,12 +373,14 @@ nav a {
 
 .welcome-content {
     max-width: 100%;
+    margin: 0px auto;
 }
 
 .welcome-text {
     margin: 0px auto;
-    width: 70%;
+    width: 90%;
     text-align: center;
+    padding-bottom: 10px;
 }
 
 .welcome-text p {
@@ -393,7 +395,7 @@ nav a {
     background-repeat: no-repeat;
     background-position: center;
     background-position-y: 45%;
-    min-height: 350px;
+    min-height: 450px;
 }
 
 .bkg__img {
@@ -401,7 +403,7 @@ nav a {
     background-repeat: no-repeat;
     background-position: center;
     background-position-y: 45%;
-    min-height: 350px;
+    min-height: 450px;
 }
 
 .space__img {
@@ -440,6 +442,27 @@ nav a {
     background-image: url("../images/img/spencer-davis-q3ApAZsS1os-unsplash.jpg");
 }
 
+.education__content-img {
+    background-image: url("../images/img/mario-heller-hXLkFpvKRys-unsplash-small.jpg");
+    min-height: 450px;
+}
+
+.for_kids__img {
+    background-image: url("../images/ante-hamersmit-vMP8lfhxPi4-unsplash-small.jpg");
+    min-height: 450px;
+}
+
+.for_teachers__img {
+    background-image: url("../images/ergonofis-oLThw11c8kg-unsplash-small.jpg");
+    background-position-y: 25%;
+    min-height: 450px;
+}
+
+.career__img {
+    background-image: url("../images/clark-tibbs-oqStl2L5oxI-unsplash.jpg");
+    min-height: 550px;
+}
+
 /* Main section main-content */ 
 
 .main-content {
@@ -463,24 +486,6 @@ iframe {
 
 .contiener-text {
     flex: 1;
-}
-
-.content-box {
-    display: flex;
-    flex-direction: row;
-    background-color: #DBDBDB;
-    margin: 0px auto;
-    width: 100%;
-    display: flex;
-    border-style: solid;
-    border-width: 1px;
-    transition: .4s;
-    opacity: .8;
-}
-
-.content-box:hover {
-    transition: .4s;
-    opacity: 1;
 }
 
 .content-text {
@@ -546,6 +551,27 @@ footer .links a {
     text-align: center;
 }
 
+/* Global */
+
+.reverse {
+    flex-direction: column-reverse;
+}
+
+/* News.html + Calendar.html */
+
 .news-text {
-    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    text-align: left;
+}
+
+.news {
+    height: 100%;
+    padding: 5px;
+    border-left: 1px solid;
+    border-right: 1px solid;
+}
+
+.news-text h2 {
+    margin: 5px 0px 0px 0px;
 }
