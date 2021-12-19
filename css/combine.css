@@ -130,7 +130,8 @@ input[type=submit] {
     padding: 11px;
     border: 1px solid black;
     text-align: center;
-    width: 100px;
+    width: 110px;
+    cursor: pointer;
   }
 
 /* Education.html + Career.html */

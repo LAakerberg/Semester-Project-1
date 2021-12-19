@@ -162,6 +162,7 @@ p .open {
 
   .buttontop {
       text-align: center;
+      text-transform: uppercase;
   }
 
   .buttontop:hover {
