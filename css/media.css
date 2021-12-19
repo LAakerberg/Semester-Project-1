@@ -11,6 +11,12 @@
     }
 }
 
+@media screen and (min-width: 316px) {
+    nav {
+        top: 65px
+    }
+}
+
 @media screen and (min-width: 347px) {
 nav {
     top: 65px;
@@ -45,9 +51,6 @@ nav {
         display: flex;
         flex-direction: row; 
     }
-    .home {
-        font-size: 1.8em;
-    }
     h1 {
         font-size: 2.5em;
     }
@@ -66,9 +69,6 @@ nav {
     }
 
 @media screen and (min-width: 600px) {
-    .home {
-            font-size: 2em;
-    }
     .education-main {
             flex-direction: row;
     }
@@ -135,48 +135,14 @@ nav {
     .sub {
         min-width: 135px;
     }
+    .home {
+        font-size: 2em;
+}
     .bar {
         top: 550px;
     }
 }
 
-@media screen and (min-width: 830px) {
-    .header {
-        flex-direction: column;
-    }
-    .menu {
-        flex: 1;
-    }
-    nav {
-        display: block;
-        max-width: 700px;
-        position: relative;
-        top: 0px;
-    }
-    nav ul {
-        padding: 0px;
-        margin: 0px auto;
-        text-transform: uppercase;
-    } 
-    nav li {
-        display: inline-block;
-    }
-    label {
-        display: none;
-    }
-    .logotype {
-        display: block;
-    }
-    .open-hours {
-        top: 370px;
-        right: 20px;
-        position: absolute;
-    }
-    .bar {
-        flex-direction: row;
-        top: 685px;
-    }
-}
 
 @media screen and (min-width: 900px) {
     .museum {
@@ -241,6 +207,42 @@ nav {
     .education-main:hover {
         transition: .4s;
         opacity: 1;
+    }
+    /* Menu for desktop */
+    .header {
+        flex-direction: column;
+    }
+    .menu {
+        flex: 1;
+    }
+    nav {
+        display: block;
+        max-width: 700px;
+        position: relative;
+        top: 0px;
+    }
+    nav ul {
+        padding: 0px;
+        margin: 0px auto;
+        text-transform: uppercase;
+    } 
+    nav li {
+        display: inline-block;
+    }
+    label {
+        display: none;
+    }
+    .logotype {
+        display: block;
+    }
+    .open-hours {
+        top: 370px;
+        right: 20px;
+        position: absolute;
+    }
+    .bar {
+        flex-direction: row;
+        top: 685px;
     }
 }
 
