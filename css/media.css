@@ -21,10 +21,14 @@
 nav {
     top: 65px;
     }
+}
+
+@media screen and (min-width: 400px) {
     .footer_bottom {
         flex-direction: row;
     }
-}
+    }
+
 
 @media screen and (min-width: 500px) {
     .grid {
@@ -251,9 +255,12 @@ nav {
         flex-direction: row;
         top: 685px;
     }
-    .explore-content h2, p {
+    .explore-content p {
         margin: 0px;
-        padding-left: 15px;
+        padding: 10px 0px 0px 15px;
+    }
+    .explore-content h2 {
+        margin-left: 10px;
     }
 }
 

@@ -502,6 +502,7 @@ iframe {
 .find-us {
     display: flex;
     flex-direction: column-reverse; 
+    background-color: #DBDBDB;
 }
 
 /* Resturants and find us */
@@ -509,13 +510,12 @@ iframe {
 .visit_us, .visit__resturants {
     flex: 1;
     background-color: #DBDBDB;
-    min-height: 350px;
-    max-height: 100%;
+    margin: auto;
 }
 
 .find-us__text, .resturants-text { 
     width: 70%;
-    margin: 10% auto;
+    margin: auto;
 }
 
 .find-us__text span { 

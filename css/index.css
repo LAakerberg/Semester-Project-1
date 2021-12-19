@@ -95,6 +95,7 @@
 .resturants {
     display: flex;
     flex-direction: column;
+    background-color: #DBDBDB;
 }
 
 .visit__resturants__img {
