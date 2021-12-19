@@ -27,7 +27,7 @@ nav {
     .footer_bottom {
         flex-direction: row;
     }
-    }
+}
 
 
 @media screen and (min-width: 500px) {
@@ -150,7 +150,7 @@ nav {
         font-size: 2em;
 }
     .bar {
-        top: 550px;
+        top: 530px;
     }
 }
 
