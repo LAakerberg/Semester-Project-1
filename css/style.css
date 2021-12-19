@@ -37,12 +37,12 @@ footer {
 }
 
 a {
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Oswald', sans-serif, verdana, Tahoma;
     text-decoration: none;
 }
 
 h1, h2, h3 {
-    font-family: 'Fira Sans', sans-serif;
+    font-family: 'Fira Sans', sans-serif, verdana, Tahoma;
     font-style: italic;
     color: #000;
     margin-top: 0px;
@@ -66,14 +66,14 @@ h3 {
 p {
     font-size: 1em;
     color: #000;
-    font-family: 'Fira Sans', sans-serif;
+    font-family: 'Fira Sans', sans-serif, verdana, Tahoma;
 }
 
 /* Header Global */
 
 .home {
     font-size: 1.4em;
-    font-family: 'Fira Sans', sans-serif;
+    font-family: 'Fira Sans', sans-serif, verdana, Tahoma;
     font-style: italic;
     color: #fff;
 }
