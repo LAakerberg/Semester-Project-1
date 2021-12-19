@@ -252,7 +252,8 @@ nav {
         top: 685px;
     }
     .explore-content h2, p {
-        margin: 10px;
+        margin: 0px;
+        padding-left: 15px;
     }
 }
 
