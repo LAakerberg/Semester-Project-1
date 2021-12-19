@@ -160,6 +160,10 @@ p .open {
       text-align: center;
   }
 
+  .buttontop {
+      text-align: center;
+  }
+
   .buttontop:hover {
     background-color: rgb(202, 202, 202);
   }
